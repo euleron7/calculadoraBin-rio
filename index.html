@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Binária</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Binária</h1>
+        <div class="converter">
+            <h2>Conversão de Decimal para Binário</h2>
+            <input type="number" id="decimalInput" placeholder="Insira um número decimal" max="255">
+            <button onclick="convertToBinary()">Converter</button>
+            <p id="binaryOutput"></p>
+        </div>
+        <div class="operations">
+            <h2>Operações Binárias</h2>
+            <input type="text" id="binaryInput1" placeholder="Insira o primeiro número binário" maxlength="8">
+            <input type="text" id="binaryInput2" placeholder="Insira o segundo número binário" maxlength="8">
+            <button onclick="binaryOperation('add')">Somar</button>
+            <button onclick="binaryOperation('subtract')">Subtrair</button>
+            <button onclick="binaryOperation('multiply')">Multiplicar</button>
+            <button onclick="binaryOperation('divide')">Dividir</button>
+            <p id="operationOutput"></p>
+        </div>
+        <div class="complement">
+            <h2>Complemento de Dois</h2>
+            <input type="text" id="binaryComplementInput" placeholder="Insira um número binário" maxlength="8">
+            <button onclick="twosComplement()">Converter</button>
+            <p id="complementOutput"></p>
+        </div>
+        <div class="conversion">
+            <h2>Binário para Hexadecimal/Octal</h2>
+            <input type="text" id="binaryConvertInput" placeholder="Insira um número binário" maxlength="8">
+            <button onclick="convertToHexOct()">Converter</button>
+            <p id="hexOutput"></p>
+            <p id="octalOutput"></p>
+        </div>
+        <footer>&copy; Euler Orbem</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
